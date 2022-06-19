@@ -1,0 +1,10 @@
+name: Cakesplugin
+version: '${project.version}'
+main: com.vimeworld.cakesplugin.Cakesplugin
+api-version: 1.15
+authors: [ tavdprojects ]
+description: Cakes! :3
+
+commands:
+    - name: givecakes
+        description: Cakes!
