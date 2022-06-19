@@ -16,7 +16,7 @@ public class GiveCakes implements Command {
 
         for (org.bukkit.entity.Player onlinePlayer : Bukkit.getServer().getOnlinePlayers()) {
             if (onlinePlayer.getLocation().distance(player.getLocation()) <= 25) {
-                onlinePlayer.getInventory().addItem(Cake(onlinePlayer.getName()));
+                onlinePlayer.getInventory().addItem(cake(onlinePlayer.getName()));
                 donatedCakesCount++;
             }
         }
@@ -26,7 +26,7 @@ public class GiveCakes implements Command {
         return true;
     }
 
-    private ItemStack Cake(String playerName) {
+    private ItemStack cake(String playerName) {
         ItemStack cake = new ItemStack(org.bukkit.Material.CAKE);
         ItemMeta meta = cake.getItemMeta();
 
